@@ -22,7 +22,7 @@
 //            VCC to 5v
 //            GND to GND
 //
-//  Servo connected to PIN 11 (3 pins) Brown to GND, Orange to VCC
+//  Servo connected to PIN 10 (3 pins) Brown to GND, Orange to VCC
 //
 //
 //  After everything working ok, uncomment the analog statements (This version has them uncommented)
@@ -55,7 +55,7 @@ int directionn = 0;   // After the former = 8 = 2 left = 4 right = 6
 Servo myservo;        // Set up the myservo
 int delay_time = 250; // After the servo motor to the stability of the time
 
-const int LOOK_FORWARD = 126;
+const int LOOK_FORWARD = 125;
 const int LOOK_RIGHT = 185;
 const int LOOK_LEFT = 65;
 
@@ -142,7 +142,7 @@ void back(int g)          //back
 {
   digitalWrite(pinRB,LOW);  
   digitalWrite(pinRF,HIGH);
-  analogWrite(MotorRPWM,230); // (Comment out to prevent movement)
+  analogWrite(MotorRPWM,110); // (Comment out to prevent movement)
   digitalWrite(pinLB,LOW);  
   digitalWrite(pinLF,HIGH);
   analogWrite(MotorLPWM,230); // (Comment out to prevent movement)
